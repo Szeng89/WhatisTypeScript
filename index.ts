@@ -1,15 +1,17 @@
-// Import stylesheets
-import './style.css';
+// // Import stylesheets
+// import './stylin.css';
 
 
-const form: HTMLFormElement = document.querySelector('#defineform');
+// const form: HTMLFormElement = document.querySelector('#defineform');
 
 
-form.onsubmit = () => {
-  const formData = new FormData(form);
 
-  console.log(formData);
-  const text = formData.get('defineword') as string;
-  console.log(text);
-  return false; // prevent reload
-};
+
+// form.onsubmit = () => {
+//   const formData = new FormData(form);
+
+//   console.log(formData);
+//   const text = formData.get('defineword') as string;
+//   console.log(text);
+//   return false; // prevent reload
+// };

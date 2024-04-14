@@ -11,7 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #4d59fb;
+    background: #88c6ba;
 }
 .wrapper{
     width: 420px;
@@ -39,7 +39,7 @@ body{
 }
 .search input:focus {
     padding: 0 41px;
-    boarder: 2px solid #4d59fb;
+    boarder: 2px solid #88c6ba;
 }
 .search input::placeholder{
     color: #b8b8b8;
@@ -56,7 +56,7 @@ body{
     pointer-events: none;
 }
 .search input:focus i{
-    color: #4d59fb;
+    color: #88c6ba;
 }
 .search span {
     right: 15px;
@@ -66,6 +66,14 @@ body{
 }
 .search input:valid ~ span {
     display: block;
+}
+.wrapper .info-text {
+    font-size: 13px;
+    color: #9a9a9a;
+    margin: 3px 0 10px;
+}
+.wrapper ul {
+/*display: none;*/
 }
 .wrapper ul li{
     display: flex;
@@ -92,4 +100,29 @@ ul .word i{
     cursor: pointer;
     font-size: 15px;
     color: #999;
+}
+.content li .details {
+    padding-left: 10px;
+    border-radius: 4px 0 0 4px;
+    border-left: 3px solid #88c6ba;
+}
+.content li .details p {
+    font-size: 17px;
+    font-weight: 500;
+}
+.content li .details span {
+    font-size: 15px;
+    color: #7e7e7e;
+}
+.sysnonyms .details .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sysnonyms .details .list span {
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: underline;
+}
+.button {
+    align-items: center;
 }

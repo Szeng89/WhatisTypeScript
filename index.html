@@ -1,58 +1,56 @@
 <!doctype html>
 <html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-  <head>
-  <meta charset="utf-8">
-  <title>Dictionary App</title>
-  <link rel="stylesheet" href="CSS/stylin.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<!--    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>Dictionary App </header>
-      <div class="search">
-        <input type="text" placeholder="Search a word" required>
+<head>
+    <meta charset="utf-8">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="stylin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>Dictionary App </header>
+    <div class="search">
+        <input id="searchInput" type="text" placeholder="Search a word" required>
         <i class="fas fa-search"></i>
         <span class="material-icons">close</span>
-       </div>
-       <ul>
-       <li class="word">
-          <div class="details">
-            <p>happy</p>
-            <span>adjective /'hapi/</span>
-          </div>
-          <i class="fas fa-volume-up"></i>
-       </li>
-       <div class="content">
-         <li class="Meaning">
-           <div class="details">
-             <p>Meaning</p>
-             <span>feeling or showing pleasure or contentment</span>
-           </div>
-         </li>
-           <li class="examples">
-               <div class="details">
-                   <p>Examples</p>
-                   <span>Shijin came in looking happy and excited</span>
-               </div>
-           </li>
-           <li class="synonyms">
-               <div class="details">
-                   <p>Synonyms</p>
-                   <div class="list">
-                       <span>glad,</span>
-                       <span>content,</span>
-                       <span>delighted,</span>
-                       <span>cheerful,</span>
-                       <span>joyful</span>
-                   </div>
-               <div>
-           </li>
-       </div>
-       </ul>
+        <button type="button" class="btn btn-outline-success" id ="searchButton">Search</button>
     </div>
+    <p class="info-text">Type a word and press enter to get its definition, example, pronounciation, and synonyms of the word.</p>
+    <ul>
+        <li class="word">
+            <div class="details">
+                <p id="word">happy<span id="word2"></span></p> <span>adjective /'hapi/</span>
+            </div>
+            <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+            <li class="meaning">
+                <div class="details">
+                    <p>Definition:</p>
+                    <span id="definition">feeling or showing pleasure or contentment</span>
+                </div>
+            </li>
+            <li class="examples">
+                <div class="details">
+                    <p>Examples:</p>
+                    <span id="example">Shijin did not come in looking happy and excited</span>
+                </div>
+            </li>
+            <li class="synonyms">
+                <div class="details">
+                    <p>Synonyms:</p>
+                    <div class="list">
+                        <span id="synonyms">synonyms,</span>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </ul>
+</div>
 
-  </body>
+<script src="script.js"></script>
+
+</body>
 </html>
