@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+      "target": "es2015", // Or higher version like "es2017", "es2018", etc.
+      "module": "commonjs",
+      // Other compiler options...
+    }
+  }
